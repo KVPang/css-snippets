@@ -1,0 +1,83 @@
+:root {
+    /* */
+}
+
+header {
+    text-align: center;
+    margin: 5px;
+}
+
+body {
+    background-color:black;
+    color:aliceblue;
+    font-family:sans-serif; 
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+.card {
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 35px;
+    padding: 10px;
+    flex: 0 0 300px;
+    box-shadow: 10px 10px 30px black;
+    background-color: black; 
+    margin: 20px;
+    text-align: center;
+  }
+
+.card:hover {
+    box-shadow: 10px 10px 50px pink;
+    border-color: hotpink;
+  }
+
+.card > header {
+    position: relative;
+    margin-top: -30px;
+    border-radius: 15px;
+    background-color:lavender;
+    padding: 20px;
+    color: black;
+  }
+  
+.card > p {
+    text-align: center;
+    background-color: pink;
+    background-image: linear-gradient(pink, gray);
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+  }
+
+.snippets {
+    flex: 1;
+    background-color: gray;
+    background-image: linear-gradient(gray, black);
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+
+footer {
+    width: 100%;
+    bottom: 0;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+  }
+
+.heart {
+    color: hotpink;
+}
+
+  @media screen and (max-width: 750px) {
+    main,
+    {flex-direction: column;
+  }
+  
